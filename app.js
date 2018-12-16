@@ -18,7 +18,7 @@ var settings = {
 var client  = mqtt.connect('mqtt://localhost', settings);
 
 client.on('connect', function () {
-  client.subscribe('smart/site/a201');
+  client.subscribe('sf/tsite/+');
 });
 
 client.on('message', function (topic, message) {
